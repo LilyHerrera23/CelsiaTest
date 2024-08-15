@@ -25,4 +25,10 @@ public class CostumerImpl implements ICostumer {
         customerRepository.save(customer);
         return customer.getIdentification();
     }
+    
+       @Override
+    public String deleteCustomer(Customer customer) {
+        customerRepository.delete(customer);
+        return customer.getIdentification();
+    }
 }

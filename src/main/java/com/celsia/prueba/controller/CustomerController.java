@@ -26,6 +26,9 @@ public class CustomerController {
     public String saveCustomer(@RequestBody Customer customer){
         return customerService.saveCustomer(customer);
     }
-
+       @PostMapping("deleteCustomer")
+    public String deleteCustomer(@RequestBody Customer customer){
+        return customerService.deleteCustomer(customer);
+    }
 
 }

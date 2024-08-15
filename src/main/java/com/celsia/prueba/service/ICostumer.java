@@ -8,5 +8,7 @@ public interface ICostumer {
     List<Customer> getAllCustomers();
     Customer findByIdentification(String identification);
     String saveCustomer(Customer customer);
+    String deleteCustomer(Customer customer);
+    
 
 }
